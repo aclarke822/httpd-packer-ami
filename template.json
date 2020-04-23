@@ -14,6 +14,15 @@
         {
             "type": "shell",
             "script": "./setup-scripts/setup.sh"
+        },
+        {
+          "type": "ansible-local",
+          "playbook_file": "./ansible/main.yml",
+          "playbook_dir": "./ansible/",
+          "role_paths": "./ansible/roles",
+          "extra_arguments": [
+            "-vvv"
+          ]
         }
     ]
 }
